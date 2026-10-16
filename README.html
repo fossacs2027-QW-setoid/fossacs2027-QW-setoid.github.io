@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>README</title><link rel="stylesheet" href="Agda.css"><script type="text/javascript" src="highlight-hover.js"></script></head><body><pre class="Agda"><a id="1" class="Keyword">module</a> <a id="8" href="README.html" class="Module">README</a> <a id="15" class="Keyword">where</a>
+
+<a id="22" class="Comment">-- §§2.1–2.2: Metatheory and formal implementation.</a>
+<a id="74" class="Keyword">import</a> <a id="81" href="Prelude.html" class="Module">Prelude</a>
+<a id="89" class="Keyword">import</a> <a id="96" href="Prelude.Base.html" class="Module">Prelude.Base</a>  <a id="110" class="Comment">-- Also §4.5.</a>
+<a id="124" class="Keyword">import</a> <a id="131" href="Prelude.Product.html" class="Module">Prelude.Product</a>
+<a id="147" class="Keyword">import</a> <a id="154" href="Prelude.Proof-Irrelevant-Identity.html" class="Module">Prelude.Proof-Irrelevant-Identity</a>
+<a id="188" class="Keyword">import</a> <a id="195" href="Prelude.W.html" class="Module">Prelude.W</a>  <a id="206" class="Comment">-- Also §4.2.</a>
+
+<a id="221" class="Comment">-- §2.3: Category with families.</a>
+<a id="254" class="Keyword">import</a> <a id="261" href="Model.Prop.CwF.Core.html" class="Module">Model.Prop.CwF.Core</a>
+<a id="281" class="Keyword">import</a> <a id="288" href="Model.Prop.CwF.Prop.html" class="Module">Model.Prop.CwF.Prop</a>
+<a id="308" class="Keyword">import</a> <a id="315" href="Model.Prop.CwF.html" class="Module">Model.Prop.CwF</a>
+
+<a id="331" class="Comment">-- §2.4: Σ-types.</a>
+<a id="349" class="Keyword">import</a> <a id="356" href="Model.Prop.Product.Core.html" class="Module">Model.Prop.Product.Core</a>
+<a id="380" class="Keyword">import</a> <a id="387" href="Model.Prop.Product.Elim.html" class="Module">Model.Prop.Product.Elim</a>
+<a id="411" class="Keyword">import</a> <a id="418" href="Model.Prop.Product.Rules.html" class="Module">Model.Prop.Product.Rules</a>
+<a id="443" class="Keyword">import</a> <a id="450" href="Model.Prop.Product.Derived.html" class="Module">Model.Prop.Product.Derived</a>
+
+<a id="478" class="Comment">-- §2.4: Π-types.</a>
+<a id="496" class="Keyword">import</a> <a id="503" href="Model.Prop.Pi.Core.html" class="Module">Model.Prop.Pi.Core</a>
+<a id="522" class="Keyword">import</a> <a id="529" href="Model.Prop.Pi.Elim.html" class="Module">Model.Prop.Pi.Elim</a>
+<a id="548" class="Keyword">import</a> <a id="555" href="Model.Prop.Pi.Rules.html" class="Module">Model.Prop.Pi.Rules</a>
+<a id="575" class="Keyword">import</a> <a id="582" href="Model.Prop.Pi.Derived.html" class="Module">Model.Prop.Pi.Derived</a>
+
+<a id="605" class="Comment">-- §2.4: Dependent identity types.</a>
+<a id="640" class="Keyword">import</a> <a id="647" href="Model.Prop.HEq.Core.html" class="Module">Model.Prop.HEq.Core</a>
+<a id="667" class="Keyword">import</a> <a id="674" href="Model.Prop.HEq.Elim.html" class="Module">Model.Prop.HEq.Elim</a>
+<a id="694" class="Keyword">import</a> <a id="701" href="Model.Prop.HEq.Derived.html" class="Module">Model.Prop.HEq.Derived</a>
+<a id="724" class="Keyword">import</a> <a id="731" href="Model.Prop.HEq.Rules.html" class="Module">Model.Prop.HEq.Rules</a>
+
+<a id="753" class="Comment">-- §3.2: Term algebras; §§3.4, 4.4–4.5: Evaluation and coherence.</a>
+<a id="819" class="Keyword">import</a> <a id="826" href="Model.Prop.Empty.Core.html" class="Module">Model.Prop.Empty.Core</a>
+<a id="848" class="Keyword">import</a> <a id="855" href="Model.Prop.QW.Free.Core.html" class="Module">Model.Prop.QW.Free.Core</a>
+<a id="879" class="Keyword">import</a> <a id="886" href="Model.Prop.QW.Free.RawElim.html" class="Module">Model.Prop.QW.Free.RawElim</a>
+<a id="913" class="Keyword">import</a> <a id="920" href="Model.Prop.QW.Free.Elim.html" class="Module">Model.Prop.QW.Free.Elim</a>
+<a id="944" class="Keyword">import</a> <a id="951" href="Model.Prop.QW.Free.Rec.html" class="Module">Model.Prop.QW.Free.Rec</a>
+<a id="974" class="Keyword">import</a> <a id="981" href="Model.Prop.QW.Free.Rules.html" class="Module">Model.Prop.QW.Free.Rules</a>
+
+<a id="1007" class="Comment">-- §§3.3, 4.4: Equational systems.</a>
+<a id="1042" class="Keyword">import</a> <a id="1049" href="Model.Prop.QW.Signature.html" class="Module">Model.Prop.QW.Signature</a>
+
+<a id="1074" class="Comment">-- §4.1: Maintaining strictness.</a>
+<a id="1107" class="Keyword">import</a> <a id="1114" href="Model.Prop.IF.Nat.Core.html" class="Module">Model.Prop.IF.Nat.Core</a>
+<a id="1137" class="Keyword">import</a> <a id="1144" href="Model.Prop.IF.Nat.Derived.html" class="Module">Model.Prop.IF.Nat.Derived</a>
+<a id="1170" class="Keyword">import</a> <a id="1177" href="Model.Prop.IF.Nat.Elim.html" class="Module">Model.Prop.IF.Nat.Elim</a>
+<a id="1200" class="Keyword">import</a> <a id="1207" href="Model.Prop.IF.Nat.Rules.html" class="Module">Model.Prop.IF.Nat.Rules</a>
+
+<a id="1232" class="Comment">-- §§3.1, 4.2: Constructing W-types.</a>
+<a id="1269" class="Keyword">import</a> <a id="1276" href="Model.Prop.W.Core.html" class="Module">Model.Prop.W.Core</a>
+
+<a id="1295" class="Comment">-- §§3.1, 4.3: Eliminating W-types.</a>
+<a id="1331" class="Keyword">import</a> <a id="1338" href="Model.Prop.W.RawElim.html" class="Module">Model.Prop.W.RawElim</a>
+<a id="1359" class="Keyword">import</a> <a id="1366" href="Model.Prop.W.Elim.html" class="Module">Model.Prop.W.Elim</a>
+<a id="1384" class="Keyword">import</a> <a id="1391" href="Model.Prop.W.Rules.html" class="Module">Model.Prop.W.Rules</a>
+
+<a id="1411" class="Comment">-- §§3.4, 4.4: Constructing QW-types.</a>
+<a id="1449" class="Keyword">import</a> <a id="1456" href="Model.Prop.QW.Core.html" class="Module">Model.Prop.QW.Core</a>
+
+<a id="1476" class="Comment">-- §§3.4, 4.5: Eliminating QW-types.</a>
+<a id="1513" class="Keyword">import</a> <a id="1520" href="Model.Prop.QW.RawElim.html" class="Module">Model.Prop.QW.RawElim</a>
+<a id="1542" class="Keyword">import</a> <a id="1549" href="Model.Prop.QW.Elim.html" class="Module">Model.Prop.QW.Elim</a>
+<a id="1568" class="Keyword">import</a> <a id="1575" href="Model.Prop.QW.Rules.html" class="Module">Model.Prop.QW.Rules</a>
+
+<a id="1596" class="Comment">-- §5: QWI-types.</a>
+<a id="1614" class="Keyword">import</a> <a id="1621" href="Model.Prop.QWI.html" class="Module">Model.Prop.QWI</a>
+</pre></body></html>
